@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.recipe-links{
+    list-style: none;
+    padding: 0;
+}
+.recipe-links li{
+    height: 250px;
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.recipe-links a {
+  display: block;
+  height: 200px;
+  background-size: cover;        /* makes image fill box */
+  background-position: center;   /* centers the image */
+  border-radius: 10px;
+  margin: 15px 0;
+  text-align: center;
+  color: rgb(228, 218, 218);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 150px;            /* pushes text down over image */
+  transition: all 0.3s ease; 
+     /* smooth hover animation */
+}
+
+
+
+.recipe-links li:nth-child(1) a { background-image: url("/odin-recipes/images/hummus.jpg"); }
+.recipe-links li:nth-child(3) a { background-image: url("/odin-recipes/images/chickenTikka.jpg"); }
+.recipe-links li:nth-child(2) a { background-image: url("/odin-recipes/images/biriyani.png"); }
+
+.recipe-links a:hover {
+  transform: scale(1.05);              /* makes it pop slightly */
+  filter: brightness(1.1);             /* brighten the image */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* adds depth */
+}
+
